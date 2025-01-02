@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer body {
+    * {
+        @apply my-0 p-0;
+    }
+
+    .wrapper {
+        @apply mx-auto container px-4 sm:px-6 lg:px-8;
+    }
+}
+
+@layer components {
+
+    .header-nav {
+        transform-origin: center top;
+        transform: scaleY(0) translateY(10%);
+        opacity: 0;
+        z-index: 20;
+    }
+
+    .header-nav.open {
+        transform: scaleY(1) translateY(0%);
+        opacity: 1;
+    }
+
+}
+
+
+.embla__dot--selected {
+    @apply bg-sky-600 shadow;
+}
+.embla__dot.embla__dot--selected:hover {
+    @apply bg-sky-600 border-none;
+}
+
+/* ефектний hover для сторінки п*/
+.gallery_tag:hover span {
+    width: 200%;
+    height: 500px;
+    background-color: #3f3f46;
+}

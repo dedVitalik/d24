@@ -1,4 +1,85 @@
 {
+  "Header": {
+    "subtitle": "ru experience the difference",
+    "title": "ru Exceptional Healthcare",
+    "description": "ru Your health is our priority. Embark on a journey of wellness with our expert care. Schedule your appointment."
+  },
+  "Button": {
+    "make_an_appointment": "Записаться к врачу"
+  },
+  "Navigation": {
+    "pathnames": "Pfadnamen",
+    "home": "Главная страница",
+    "services": "Услуги",
+    "doctors": "Врачи",
+    "menu": "Меню",
+    "gallery": "Галерея",
+    "blogs": "Блог",
+    "book_appointment": "Назначение",
+    "contact": "Контакты"
+  },
+  "Services": {
+    "section_name": "Наши услуги",
+    "section_desc": "Лучшие услуги для наших клиентов",
+    "service_items": {
+      "item0": {
+        "title": "Услуга 1",
+        "description": "О услуге 1  Physiotherapy is a type of therapy that uses physical movement to help people recover from injuries, illnesses.",
+        "image": "/images/services/service-1.jpg"
+      },
+      "item1": {
+        "title": "Routine Medical Care",
+        "description": "Routine medical care, Preventive care wellness care, essential for maintaining health preventing illness.",
+        "image": "/images/services/service-2.jpg"
+      },
+      "item2": {
+        "title": "Nursing Services",
+        "description": "Encompass a wide range of healthcare practices provided by licensed nurses to promote, maintain, restore health.",
+        "image": "/images/services/service-3.jpg"
+      },
+      "item3": {
+        "title": "Vaccination",
+        "description": "Vaccines work by exposing the body to a weakened or inactive form of a virus, which helps body develop immunity.",
+        "image": "/images/services/service-4.jpg"
+      },
+      "item4": {
+        "title": "Minor Surgery",
+        "description": "Surgical procedure that is typically less invasive and requires less time to complete than major surgery.",
+        "image": "/images/services/service-5.jpg"
+      },
+      "item5": {
+        "title": "Diagnostic Imaging",
+        "description": "Is a group of medical tests that use different imaging techniques to create pictures of the inside of the body.",
+        "image": "/images/services/service-6.jpg"
+      }
+    }
+  },
+  "Testimonials": {
+    "section_name": "Ru Testimonials",
+    "section_desc": "Ru People love us. Real Voices, Real Experiences: Insights from Our Patients"
+  },
+  "Documents": {
+    "section_name": "ДОКУМЕНТЫ",
+    "section_desc": "НЕОБХОДИМЫЕ ДОКУМЕНТЫ ДЛЯ РАЗМЕЩЕНИЯ",
+    "document1": "Копия паспорта",
+    "document2": "Копия идентификационного номера"
+  },
+  "Gallery": {
+    "section_name": "Фото пансионата",
+    "section_desc": "Фото наших благоустроенных помещений"
+  },
+  "GalleryTagName": {
+    "all": "Все",
+    "bathrooms" : "Ванные комнаты",
+    "bedrooms" : "Спальни",
+    "yard": "Фасад"
+  },
+  "VideoRewies": {
+    "section_name": "видеоотзывы",
+    "section_desc": "Отзывы постояльцев о нашем пансионате для престарелых",
+    "text1": "Подарите своему близкому человеку достойную, счастливую старость, а мы Вам в этом поможем!",
+    "text2": "Мы понимаем, как важно человеку в возрасте чувствовать заботу и внимание, общаться и находиться в социальном окружении, чувствовать себя необходимым. Именно поэтому мы стараемся организовать быт и досуг Ваших родных так, чтобы их жизнь была полноценной и интересной."
+  },
   "Error": {
     "description": "<p>Es ist leider ein Problem aufgetreten.</p><p>Du kannst versuchen <retry>diese Seite neu zu laden</retry>.</p>",
     "title": "Etwas ist schief gelaufen!"
@@ -16,10 +97,6 @@
   },
   "Manifest": {
     "name": ""
-  },
-  "Navigation": {
-    "home": "Start",
-    "pathnames": "Pfadnamen"
   },
   "NotFoundPage": {
     "description": "Bitte überprüfe die Addressleiste deines Browsers oder verwende die Navigation um zu einer bekannten Seite zu wechseln.",

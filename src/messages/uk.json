@@ -1,4 +1,85 @@
 {
+  "Header": {
+    "subtitle": "ua experience the difference",
+    "title": "ua Exceptional Healthcare",
+    "description": "ua Your health is our priority. Embark on a journey of wellness with our expert care. Schedule your appointment."
+  },
+  "Button": {
+    "make_an_appointment": "Записатися на прийом"
+  },
+  "Navigation": {
+    "pathnames": "Pathnames",
+    "home": "Головна сторінка",
+    "services": "Послуги",
+    "doctors": "Лікарі",
+    "menu": "Меню",
+    "gallery": "Галерея",
+    "blogs": "Блог",
+    "book_appointment": "Призначення",
+    "contact": "Контакти"
+  },
+  "Services": {
+    "section_name": "Наші послуги",
+    "section_desc": "Найкращі послуги для наших клієнтів",
+    "service_items": {
+      "item0": {
+        "title": "Послуга 1",
+        "description": "Про послугу 1",
+        "image": "/images/services/service-1.jpg"
+      },
+      "item1": {
+        "title": "Послуга 2",
+        "description": "Про послугу 2 Routine medical care, Preventive care wellness care, essential for maintaining health preventing illness.",
+        "image": "/images/services/service-2.jpg"
+      },
+      "item2": {
+        "title": "Послуга 3",
+        "description": "Про послугу 3 Encompass a wide range of healthcare practices provided by licensed nurses to promote, maintain, restore health.",
+        "image": "/images/services/service-3.jpg"
+      },
+      "item3": {
+        "title": "Послуга 4",
+        "description": "Про послугу 4 Vaccines work by exposing the body to a weakened or inactive form of a virus, which helps body develop immunity.",
+        "image": "/images/services/service-4.jpg"
+      },
+      "item4": {
+        "title": "Послуга 5 Minor Surgery",
+        "description": "Про послугу 5 Surgical procedure that is typically less invasive and requires less time to complete than major surgery.",
+        "image": "/images/services/service-5.jpg"
+      },
+      "item5": {
+        "title": "Послуга 6 Diagnostic Imaging",
+        "description": "Про послугу 6 Is a group of medical tests that use different imaging techniques to create pictures of the inside of the body.",
+        "image": "/images/services/service-6.jpg"
+      }
+    }
+  },
+  "Testimonials": {
+    "section_name": "UA Testimonials",
+    "section_desc": "UA People love us. Real Voices, Real Experiences: Insights from Our Patients"
+  },
+  "Documents": {
+    "section_name": "ДОКУМЕНТИ",
+    "section_desc": "НЕОБХІДНІ ДОКУМЕНТИ ДЛЯ РОЗМІЩЕННЯ",
+    "document1": "Копія паспорта",
+    "document2": "Копія ІПН (ідентифікаційного коду)"
+  },
+  "Gallery": {
+    "section_name": "Фото пансіонату",
+    "section_desc": "Фото наших затишних приміщень"
+  },
+  "GalleryTagName": {
+    "all": "Всі",
+    "bathrooms" : "Ванні кімнати",
+    "bedrooms" : "Спальні",
+    "yard": "Фасад"
+  },
+  "VideoRewies": {
+    "section_name": "Відеовідгуки",
+    "section_desc": "Відгуки постояльців про наш пансіонат для літніх",
+    "text1": "Подаруйте своїй близькій людині достойну, щасливу старість, а ми Вам в цьому допоможемо!",
+    "text2": "Ми розуміємо, як важливо людині в похилому віці відчувати турботу та увагу, спілкуватися і знаходитися в соціальному оточенні, відчувати себе необхідним. Саме тому ми стараємося організувати побут та дозвілля Ваших рідних так, щоб їхнє життя було повноцінним та цікавим."
+  },
   "Error": {
     "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
     "title": "Something went wrong!"
@@ -16,10 +97,6 @@
   },
   "Manifest": {
     "name": "next-intl example"
-  },
-  "Navigation": {
-    "home": "Home",
-    "pathnames": "Pathnames"
   },
   "NotFoundPage": {
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
