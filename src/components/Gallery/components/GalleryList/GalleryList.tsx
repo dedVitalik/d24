@@ -1,10 +1,10 @@
 'use client';
 
+import { useEffect , useState } from 'react';
 import type { galleryItemsType } from '@/types/gallery';
-import { useState } from 'react';
-import GalleryItem from '../GalleryItem/GallaryItem';
 import { EmblaGallaryCarousel } from '../EmblaCarousel/EmblaGallaryCarousel';
-import { useEffect } from 'react';
+import GalleryItem from '../GalleryItem/GallaryItem';
+
 
 export default function GalleryList({ items, tagNameTranslate }: any) {
   const len = items.length;
@@ -13,11 +13,11 @@ export default function GalleryList({ items, tagNameTranslate }: any) {
 
   useEffect(() => {
     if (sliderNumber === 0) {
-      let html = document.querySelector('html');
+      const html = document.querySelector('html');
       let top;
 
       if (html) {
-        let topStyle = html.style.top;
+        const topStyle = html.style.top;
         top = topStyle.replace('px', '');
         top = parseInt(top);
       }
@@ -33,14 +33,14 @@ export default function GalleryList({ items, tagNameTranslate }: any) {
       let scrollHeight;
       if (html) {
         scrollHeight = '-' + Math.round(html.scrollTop) + 'px';
-        html?.classList.add('fixed', 'w-full', 'overflow-y-scroll');
+        html.classList.add('fixed', 'w-full', 'overflow-y-scroll');
         html.style.top = scrollHeight;
       }
     }
   }, [sliderNumber]);
 
-  function getItems(items: galleryItemsType[], tagName: string) {
-    let newItems = [];
+  function getItems(items: Array<galleryItemsType>, tagName: string) {
+    const newItems = [];
     if (tagName == 'all') {
       for (let i = 0; i < items.length; i++) {
         const itemObject = {
@@ -70,21 +70,21 @@ export default function GalleryList({ items, tagNameTranslate }: any) {
 
   return (
     <div>
-      {sliderNumber ? <EmblaGallaryCarousel items={items} setNumber={setSliderNumber} number={sliderNumber} /> : null}
+      {sliderNumber ? <EmblaGallaryCarousel items={items} number={sliderNumber} setNumber={setSliderNumber} /> : null}
 
-      <div className='leading-6 text-center text-zinc-800 mb-6  md:mx-auto' style={{ listStyle: 'outside' }}>
+      <div className='mb-6 text-center leading-6 text-zinc-800  md:mx-auto' style={{ listStyle: 'outside' }}>
         <ul
-          className='inline-block relative flex-wrap p-0 m-0 text-center uppercase  md:max-w-[75%] max-w-full'
+          className='relative m-0 inline-block max-w-full flex-wrap p-0 text-center  uppercase md:max-w-[75%]'
           id='gallery-flters'
           style={{ listStyle: 'none' }}
         >
           {tagNameTranslate.map((tag: any, index: any) => (
             <li
               key={index}
-              onClick={() => setTagName(tag.tagName)}
               className={`${
                 tagName === tag.tagName ? 'bg-sky-600 text-white' : ' bg-white text-sky-600'
-              } gallery_tag inline-block overflow-hidden relative py-3 px-5 mt-0 mr-5 mb-2 ml-2 text-sm font-normal cursor-pointer hover:text-white focus:text-white`}
+              } gallery_tag relative mb-2 ml-2 mr-5 mt-0 inline-block cursor-pointer overflow-hidden px-5 py-3 text-sm font-normal hover:text-white focus:text-white`}
+              onClick={() => setTagName(tag.tagName)}
               style={{
                 zIndex: 1,
                 borderRadius: 30,
@@ -95,7 +95,7 @@ export default function GalleryList({ items, tagNameTranslate }: any) {
               }}
             >
               <span
-                className='block absolute w-0 h-0 bg-zinc-700 '
+                className='absolute block size-0 bg-zinc-700 '
                 style={{
                   zIndex: -1,
                   borderRadius: 30,
@@ -111,15 +111,15 @@ export default function GalleryList({ items, tagNameTranslate }: any) {
         </ul>
       </div>
 
-      <div className='grid grid-cols-2 md:grid-cols-3  xl:grid-cols-4 auto-rows-max grid-flow-row-dense gap-2'>
+      <div className='grid grid-flow-row-dense auto-rows-max  grid-cols-2 gap-2 md:grid-cols-3 xl:grid-cols-4'>
         {getItems(items, tagName).map((item, index) => (
           <div
             key={index}
+            className={`${item.vertical ? 'row-span-2' : ''} cursor-pointer overflow-hidden rounded`}
             onClick={() => setSliderNumber(item.id+1)}
-            className={`${item.vertical ? 'row-span-2' : ''} overflow-hidden rounded cursor-pointer`}
           >
         
-            <GalleryItem vertical={item.vertical} image={item.image} len={len} keyNumber={index + 1} />
+            <GalleryItem image={item.image} keyNumber={index + 1} len={len} vertical={item.vertical} />
           </div>
         ))}
       </div>

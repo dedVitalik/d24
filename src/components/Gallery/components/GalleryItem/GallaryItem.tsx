@@ -20,9 +20,9 @@ interface GallaryItemType {
   keyNumber: number;
 }
 
-export default function GalleryItem({ vertical, image, len, keyNumber }: GallaryItemType) {
+export default function GalleryItem({ image, keyNumber, len, vertical }: GallaryItemType) {
 
   return ( 
-        <Image className='w-full h-full' src={image} width={400} height={300} alt='фото' />
+        <Image alt='фото' className='size-full' height={300} src={image} width={400} />
   );
 }
