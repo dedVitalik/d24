@@ -6,3 +6,5 @@ export * from './Documents/Documents';
 export * from './Documents2/Documents2';
 export * from './VideoReviews/VideoReviews';
 export * from './PageLayout';
+export * from './Gallery/Gallery';
+export * from './SectionWrapper/SectionWrraper';
