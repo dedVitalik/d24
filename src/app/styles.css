@@ -28,7 +28,6 @@
 
 }
 
-
 .embla__dot--selected {
     @apply bg-sky-600 shadow;
 }

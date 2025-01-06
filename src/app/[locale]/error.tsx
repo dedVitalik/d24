@@ -2,7 +2,7 @@
 
 import {useTranslations} from 'next-intl';
 import {useEffect} from 'react';
-import PageLayout from '@/components/PageLayout';
+import { PageLayout } from '@/components';
 
 type Props = {
   error: Error;
@@ -17,7 +17,7 @@ export default function Error({error, reset}: Props) {
   }, [error]);
 
   return (
-    <PageLayout title={t('title')}>
+    <PageLayout>
       <div>
         {t.rich('description', {
           p: (chunks) => <p className="mt-4">{chunks}</p>,

@@ -1,13 +1,14 @@
 'use client';
 
-import { useLocale } from 'next-intl';
 import { useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { ChangeEvent, useTransition } from 'react';
 
-export const Switcher = () => {
+export function Switcher() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
+    // eslint-disable-next-line func-style
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
     startTransition(() => {
@@ -16,19 +17,19 @@ export const Switcher = () => {
   };
 
   return (
-    <label htmlFor='language' className='border-2 rounded'>
+    <label className='rounded border-2' htmlFor='language'>
       <p className='sr-only'>change language</p>
       <select
-        defaultValue={localActive}
-        name=''
-        id='language'
         className='bg-transparent py-2'
-        onChange={onSelectChange}
+        defaultValue={localActive}
         disabled={isPending}
+        id='language'
+        name=''
+        onChange={onSelectChange}
       >
         <option value='uk'>Українська</option>
         <option value='ru'>Русский</option>
       </select>
     </label>
   );
-};
+}

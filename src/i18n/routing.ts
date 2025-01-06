@@ -10,8 +10,36 @@ export const routing = defineRouting({
     '/pathnames': {
       uk: '/pathnames',
       ru: '/pfadnamen'
+    },
+    '/services': {
+      uk: '/services',
+      ru: '/services'
+    },
+    '/doctors': {
+      uk: '/doctors',
+      ru: '/doctors'
+    },
+    '/menu': {
+      uk: '/menu',
+      ru: '/menu'
+    },
+    '/gallery': {
+      uk: '/gallery',
+      ru: '/gallery'
+    },
+    '/blogs': {
+      uk: '/blogs',
+      ru: '/blogs'
+    },
+    '/book_appointment': {
+      uk: '/book_appointment',
+      ru: '/book_appointment'
+    },
+    '/contact': {
+      uk: '/contact',
+      ru: '/contact'
     }
-  }
+}
 });
 
 export type Locale = (typeof routing.locales)[number];

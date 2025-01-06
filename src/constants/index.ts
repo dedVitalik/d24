@@ -7,6 +7,6 @@ export const siteNavItems: Array<siteNavItemType> = [
 	{ title: 'menu', href: 'menu'},
 	{ title: 'gallery', href: 'gallery'},
 	{ title: 'blogs', href: 'blogs'},
-	{ title: 'book_appointment', href: 'book-appointment'},
-	{ title: 'contact', href: 'contact'},	
+	{ title: 'book_appointment', href: 'book_appointment'},
+	{ title: 'contact', href: 'contact'},
 ];
