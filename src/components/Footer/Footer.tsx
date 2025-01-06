@@ -14,7 +14,7 @@ export function Footer() {
         sizes='100vw'
         src='/images/footer/footer-bg.jpg'
         style={{
-          zIndex: -1,
+          zIndex: -1
         }}
       />
       <div className='wrapper'>
@@ -23,12 +23,17 @@ export function Footer() {
             <Link className='mb-3 inline-block' href='/'>
               <Image alt='Logo' height={62} src='/images/header/logo.png' width={200} />
             </Link>
-            <p>Your health is our mission. Partner with us for exceptional healthcare. Schedule your appointment today and experience the difference of exceptional healthcare.</p>
+            <p>
+              Your health is our mission. Partner with us for exceptional healthcare. Schedule your appointment today
+              and experience the difference of exceptional healthcare.
+            </p>
             <div className='mt-5 flex justify-between px-4'>
-              <div className='font-light leading-6 tracking-wide'>Mon-Fri</div><div className='font-bold leading-6 tracking-wide'>8:00am–7:00pm</div>
+              <div className='font-light leading-6 tracking-wide'>Mon-Fri</div>
+              <div className='font-bold leading-6 tracking-wide'>8:00am–7:00pm</div>
             </div>
             <div className='flex justify-between px-4'>
-              <div className='font-light leading-6 tracking-wide'>Sat-Sun</div><div className='font-bold leading-6 tracking-wide'>11:00am–11:00pm</div>
+              <div className='font-light leading-6 tracking-wide'>Sat-Sun</div>
+              <div className='font-bold leading-6 tracking-wide'>11:00am–11:00pm</div>
             </div>
             <div className='mt-4 flex space-x-5'>
               <Link href='#'>
@@ -55,20 +60,27 @@ export function Footer() {
             </div>
           </div>
           <div className='mt-14 min-w-52 basis-full px-0 md:basis-1/2 md:px-4 lg:mt-0 lg:basis-1/3'>
-            <h5 className='before:content-"" relative mb-6 pb-4 text-xl font-medium leading-normal before:absolute before:bottom-0 before:left-0 before:h-[0.12rem] before:w-12 before:bg-sky-700'>Useful Links</h5>
+            <h5 className='before:content-"" relative mb-6 pb-4 text-xl font-medium leading-normal before:absolute before:bottom-0 before:left-0 before:h-[0.12rem] before:w-12 before:bg-sky-700'>
+              Useful Links
+            </h5>
             <ul className='flex flex-wrap'>
               {siteNavItems.map((item) => (
                 <li key={item.href} className='basis-1/2 pr-2'>
-                  <Link className='inline-block pb-2 transition-all duration-500 hover:translate-x-2 hover:text-zinc-800' href={`/${item.href}`}>
-                    <span className='text-2xl'>&#187; </span>{t(item.title)}
+                  <Link
+                    className='inline-block pb-2 transition-all duration-500 hover:translate-x-2 hover:text-zinc-800'
+                    href={`/${item.href}`}
+                  >
+                    <span className='text-2xl'>&#187; </span>
+                    {t(item.title)}
                   </Link>
                 </li>
               ))}
             </ul>
-
           </div>
           <address className='mt-14 min-w-52 basis-full px-0 not-italic md:basis-1/2  md:px-4 lg:mt-0 lg:basis-1/3'>
-            <h5 className='before:content-"" relative mb-6 pb-4 text-xl font-medium leading-normal before:absolute before:bottom-0 before:left-0 before:h-[0.12rem] before:w-12 before:bg-sky-700'>Contact:</h5>
+            <h5 className='before:content-"" relative mb-6 pb-4 text-xl font-medium leading-normal before:absolute before:bottom-0 before:left-0 before:h-[0.12rem] before:w-12 before:bg-sky-700'>
+              Contact:
+            </h5>
             <div className='text-base leading-normal'>Address:</div>
             <div className='space-x-2'>
               <span className='[&>svg]:size-4 [&>svg]:fill-white'>
@@ -98,8 +110,8 @@ export function Footer() {
             <div className='mt-4 text-base leading-normal'>Email:</div>
             <Link className='cursor-pointer space-x-2' href='mailto:'>
               <span className='[&>svg]:size-4 [&>svg]:fill-white'>
-                <svg className='inline' viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                <svg className='inline' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z' />
                 </svg>
               </span>
               <span>info@example.com</span>
@@ -111,9 +123,15 @@ export function Footer() {
         <div className='wrapper  flex justify-between space-x-6'>
           <div>Care - Medical © 2023 - Designed by Zr Themes.</div>
           <div className='hidden space-x-8 lg:flex'>
-            <Link className='transition-all duration-500 hover:text-zinc-800' href='#'>Terms & Conditions</Link>
-            <Link className='transition-all duration-500 hover:text-zinc-800'  href='#'>Privacy Policy</Link>
-            <Link className='transition-all duration-500 hover:text-zinc-800'  href='#'>Contact</Link>
+            <Link className='transition-all duration-500 hover:text-zinc-800' href='#'>
+              Terms & Conditions
+            </Link>
+            <Link className='transition-all duration-500 hover:text-zinc-800' href='#'>
+              Privacy Policy
+            </Link>
+            <Link className='transition-all duration-500 hover:text-zinc-800' href='#'>
+              Contact
+            </Link>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export function Switcher() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
   const localActive = useLocale();
-    // eslint-disable-next-line func-style
+  // eslint-disable-next-line func-style
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
     startTransition(() => {

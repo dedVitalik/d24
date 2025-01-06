@@ -70,8 +70,8 @@
   },
   "GalleryTagName": {
     "all": "Все",
-    "bathrooms" : "Ванные комнаты",
-    "bedrooms" : "Спальни",
+    "bathrooms": "Ванные комнаты",
+    "bedrooms": "Спальни",
     "yard": "Фасад"
   },
   "VideoRewies": {

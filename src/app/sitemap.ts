@@ -1,6 +1,6 @@
-import {MetadataRoute} from 'next';
-import {host} from '@/config';
-import {Locale, getPathname, routing} from '@/i18n/routing';
+import { MetadataRoute } from 'next';
+import { host } from '@/config';
+import { Locale, getPathname, routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [getEntry('/'), getEntry('/pathnames')];
@@ -12,14 +12,12 @@ function getEntry(href: Href) {
   return {
     url: getUrl(href, routing.defaultLocale),
     alternates: {
-      languages: Object.fromEntries(
-        routing.locales.map((locale) => [locale, getUrl(href, locale)])
-      )
+      languages: Object.fromEntries(routing.locales.map((locale) => [locale, getUrl(href, locale)]))
     }
   };
 }
 
 function getUrl(href: Href, locale: Locale) {
-  const pathname = getPathname({locale, href});
+  const pathname = getPathname({ locale, href });
   return host + pathname;
 }
